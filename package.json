@@ -1,6 +1,6 @@
 {
   "name": "iterm-version",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get iTerm version.",
   "license": "MIT",
   "repository": "EGOIST/iterm-version",
