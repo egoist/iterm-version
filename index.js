@@ -1,9 +1,9 @@
 'use strict'
-var fs = require('fs')
-var pify = require('pify')
-var plist = require('plist')
+const fs = require('fs')
+const pify = require('pify')
+const plist = require('plist')
 
-var iterm = '/Applications/iTerm.app/Contents/Info.plist'
+const iterm = '/Applications/iTerm.app/Contents/Info.plist'
 
 module.exports = function () {
 	return pify(fs)
@@ -12,6 +12,6 @@ module.exports = function () {
 }
 
 module.exports.sync = function () {
-	var data = fs.readFileSync(iterm, 'utf8')
+	const data = fs.readFileSync(iterm, 'utf8')
 	return plist.parse(data).CFBundleGetInfoString
 }
