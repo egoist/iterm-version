@@ -30,7 +30,6 @@
   },
   "dependencies": {
     "pify": "^2.3.0",
-    "pinkie-promise": "^2.0.0",
     "plist": "^1.2.0"
   }
 }
